@@ -24,11 +24,27 @@ class PaginaInicial extends StatelessWidget {
         backgroundColor: Colors.purple,
       ),
       body: Container(
-        color: Color.fromARGB(255, 238, 165, 160),
-        height: 200,
-        alignment: Alignment.center,
-        child: Text("uma frase qualquer"),
-      ),
+          color: Color.fromARGB(255, 238, 165, 160),
+          height: 200,
+          alignment: Alignment.center,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("AVATAR"),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  "TITANIC",
+                  style: TextStyle(
+                    fontSize: 70,
+                  ),
+                ),
+              ),
+            ],
+          )),
     );
   }
 }
